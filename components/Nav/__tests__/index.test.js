@@ -17,6 +17,9 @@ describe('Nav component', () =>{
         expect(asFragment()).toMatchSnapshot();
     });
 
+});
+
+
     //if emoji is visible
     describe('emoji is visible', () => {
         it('inserts emoji into the h2', () => {
@@ -26,7 +29,7 @@ describe('Nav component', () =>{
             expect(getByLabelText('camera')).toHaveTextContent('📸');
             //assert
         });
-    })
+    });
 
     //if links are visible
     describe('links are visible', () => {
@@ -37,5 +40,4 @@ describe('Nav component', () =>{
             expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
             expect(getByTestId('about')).toHaveTextContent('About me');
         })
-    })
-})
+    });
